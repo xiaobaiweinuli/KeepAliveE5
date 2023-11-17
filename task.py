@@ -82,7 +82,6 @@ def invoke_api(path):
                     )
             except Exception:
                 time.sleep(random.random() * 3)
-                pass
         return result
 
     periods = random.randint(50, MAX_INVOKE_TIMES)

@@ -6,7 +6,7 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from util import multip_accounts_task
 
-KEY = (os.getenv('PASSWD') + '=' * 16)[0:16]
+KEY = (os.getenv('PASSWD') + '=' * 16)[:16]
 
 
 def encrypt(data: str, key: str):
